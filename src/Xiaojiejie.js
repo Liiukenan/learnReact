@@ -1,6 +1,6 @@
 import React, { Component,Fragment } from 'react'
 import Xiaoitem from './Xiaoitem'
-import AddItem from './Additem'
+// import AddItem from './Additem'
 class xiaojiejie extends Component {
     constructor(props) {           
        super(props);
