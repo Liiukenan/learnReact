@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-// import PropTypes from "prop-types"
+import PropTypes from "prop-types"
 class Xiaoitem extends Component {
     constructor(props){
         super(props)
         this.state={
-            aa:123422
+         
         }
         // this.handleClick=this.handleClick.bind(this)
     }
@@ -13,8 +13,10 @@ class Xiaoitem extends Component {
     // }
     render() {
         return(
-            
-               <li onClick={this.props.deleItem}  dangerouslySetInnerHTML={{ __html:this.props.content}}>
+            //  dangerouslySetInnerHTML={{ __html:this.props.content}}
+               <li onClick={this.props.deleItem}>
+                   {this.props.avaname} {this.props.content}
+
                 </li> 
             
         )
@@ -23,3 +25,13 @@ class Xiaoitem extends Component {
 }
 
 export default Xiaoitem;
+
+Xiaoitem.propTypes={
+    // 必须传值 isRequired
+    content:PropTypes.string,
+    deleteItem:PropTypes.func,
+    avaname:PropTypes.string.isRequired
+}
+// Xiaoitem.defaultProps={
+//     avaname:'kenan'
+// }

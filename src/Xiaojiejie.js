@@ -8,7 +8,8 @@ class xiaojiejie extends Component {
            inputValue:'kenan',
            list:[
                '泰式按摩'
-           ]
+           ],
+           avaname:null
        }
        this.inputChange=this.inputChange.bind(this)
        this.addList=this.addList.bind(this)
@@ -39,7 +40,7 @@ class xiaojiejie extends Component {
                   {
                       this.state.list.map((item,index)=>{
                           return(
-                              <Xiaoitem list={this.state.list} key={index+item} content={item} deleItem={this.deleItem.bind(this,index)}/>
+                              <Xiaoitem list={this.state.list} key={index+item} content={item} deleItem={this.deleItem.bind(this,index)} avaname={this.state.avaname}/>
                           )
                       })
                   }
