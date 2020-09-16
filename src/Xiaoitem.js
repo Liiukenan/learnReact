@@ -4,7 +4,7 @@ class Xiaoitem extends Component {
     constructor(props){
         super(props)
         this.state={
-            aa:1234
+            aa:123422
         }
         // this.handleClick=this.handleClick.bind(this)
     }
