@@ -32,6 +32,6 @@ Xiaoitem.propTypes={
     deleteItem:PropTypes.func,
     avaname:PropTypes.string.isRequired
 }
-// Xiaoitem.defaultProps={
-//     avaname:'kenan'
-// }
+Xiaoitem.defaultProps={
+    avaname:'kenan'
+}

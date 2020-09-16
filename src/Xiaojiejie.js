@@ -9,14 +9,15 @@ class xiaojiejie extends Component {
            list:[
                '泰式按摩'
            ],
-           avaname:null
+           avaname:'1234'
        }
        this.inputChange=this.inputChange.bind(this)
        this.addList=this.addList.bind(this)
     }
     inputChange(e){
         this.setState({
-            inputValue:e.target.value
+            // inputValue:e.target.value
+            inputValue:this.input.value
         })
     }
     addList(){
@@ -31,11 +32,17 @@ class xiaojiejie extends Component {
             list:list
         })
     }
+    // input=(input)=>this.input=input
     render() {
         return (
             <Fragment>
            {/* 注释 */}
-                <AddItem inputChange={this.inputChange} inputValue={this.state.inputValue} addList={this.addList}/>
+                {/* <AddItem inputChange={this.inputChange} inputValue={this.state.inputValue} addList={this.addList} input={this.input}/> */}
+                 <label htmlFor="kenan">增加</label>
+                    <input id="kenan" type="text" onChange={this.inputChange} value={this.inputValue} ref={(input)=>this.input=input}/>
+                    <button onClick={this.addList}>
+                        增加
+                    </button> 
                 <ul>
                   {
                       this.state.list.map((item,index)=>{
