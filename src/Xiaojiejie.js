@@ -23,7 +23,10 @@ class xiaojiejie extends Component {
     addList(){
         this.setState({
             list:[...this.state.list,this.state.inputValue]
+        },()=>{
+            console.log(this.ul.querySelectorAll('li').length)
         })
+        
     }
     deleItem(i){
         let list=this.state.list;
@@ -43,7 +46,7 @@ class xiaojiejie extends Component {
                     <button onClick={this.addList}>
                         增加
                     </button> 
-                <ul>
+                <ul ref={ul=>this.ul=ul}>
                   {
                       this.state.list.map((item,index)=>{
                           return(
