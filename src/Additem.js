@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 export default class additem extends Component {
-  
- 
-  
   render() {
     return (
       <div>
@@ -17,7 +14,7 @@ export default class additem extends Component {
             this.props.input = input;
           }}
         />
-       
+
         <button onClick={this.props.addList}>增加</button>
       </div>
     );
