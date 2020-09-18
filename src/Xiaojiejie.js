@@ -1,6 +1,7 @@
 import React, { Component,Fragment } from 'react'
 import Xiaoitem from './Xiaoitem'
 // import AddItem from './Additem'
+import {_getList} from './api/server'
 class xiaojiejie extends Component {
     constructor(props) {           
        super(props);
@@ -14,6 +15,10 @@ class xiaojiejie extends Component {
        this.inputChange=this.inputChange.bind(this)
        this.addList=this.addList.bind(this)
     }
+    componentDidMount() {
+        _getList();
+    }
+    
     inputChange(e){
         this.setState({
             // inputValue:e.target.value

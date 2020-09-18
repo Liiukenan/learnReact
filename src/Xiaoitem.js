@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+
 class Xiaoitem extends Component {
   UNSAFE_componentWillMount() {
     // console.log("1将要挂载");
