@@ -20,8 +20,17 @@ class xiaojiejie extends Component {
         console.log('====================================');
         console.log(process.env.NODE_ENV);
         console.log('====================================');
-        _getList();
-        _login({'user_id':'kenan'})
+        let list=_getList();
+        list.then((res)=>{
+            console.log('====================================');
+            console.log(res.data);
+            console.log('====================================');
+        })
+        let loginData=_login({'user_id':'kenan'})
+        loginData.then((res)=>{
+            console.log(res.data);
+        })
+        
     }
     
     inputChange(e){
