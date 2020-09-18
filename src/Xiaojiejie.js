@@ -22,13 +22,13 @@ class xiaojiejie extends Component {
         console.log('====================================');
         let list=_getList();
         list.then((res)=>{
-            console.log('====================================');
-            console.log(res.data);
-            console.log('====================================');
+            this.setState({
+               list:res.data.data
+            })
         })
         let loginData=_login({'user_id':'kenan'})
         loginData.then((res)=>{
-            console.log(res.data);
+            console.log(res);
         })
         
     }
@@ -60,7 +60,6 @@ class xiaojiejie extends Component {
     render() {
         return (
             <Fragment>
-
                  <label htmlFor="kenan">增加</label>
                     <input id="kenan" type="text" onChange={this.inputChange} value={this.inputValue} ref={(input)=>this.input=input}/>
                     <button onClick={this.addList}>
