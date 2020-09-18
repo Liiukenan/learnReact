@@ -1,6 +1,7 @@
 import React, { Component,Fragment } from 'react'
 import Xiaoitem from './Xiaoitem'
 // import AddItem from './Additem'
+import './xiaojiejie.styl'
 import {_getList,_login} from './api/server'
 class xiaojiejie extends Component {
     constructor(props) {           

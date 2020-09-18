@@ -135,5 +135,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2"
   }
 }
