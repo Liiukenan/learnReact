@@ -1,7 +1,7 @@
 import React, { Component,Fragment } from 'react'
 import Xiaoitem from './Xiaoitem'
 // import AddItem from './Additem'
-import {_getList} from './api/server'
+import {_getList,_login} from './api/server'
 class xiaojiejie extends Component {
     constructor(props) {           
        super(props);
@@ -16,7 +16,11 @@ class xiaojiejie extends Component {
        this.addList=this.addList.bind(this)
     }
     componentDidMount() {
+        console.log('====================================');
+        console.log(process.env.NODE_ENV);
+        console.log('====================================');
         _getList();
+        _login({'user_id':'kenan'})
     }
     
     inputChange(e){
@@ -41,11 +45,12 @@ class xiaojiejie extends Component {
         })
     }
     // input=(input)=>this.input=input
+    /* <AddItem inputChange={this.inputChange} inputValue={this.state.inputValue} addList={this.addList} input={this.input}/> */
+
     render() {
         return (
             <Fragment>
-           {/* 注释 */}
-                {/* <AddItem inputChange={this.inputChange} inputValue={this.state.inputValue} addList={this.addList} input={this.input}/> */}
+
                  <label htmlFor="kenan">增加</label>
                     <input id="kenan" type="text" onChange={this.inputChange} value={this.inputValue} ref={(input)=>this.input=input}/>
                     <button onClick={this.addList}>

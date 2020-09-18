@@ -10,6 +10,9 @@ UNSAFE_componentWillMount （将废弃）
 render
 componentDidMount
 
+
+ps：render中不可添加注释，否则打包后会报错
+
 挂载的三个阶段
 
 
