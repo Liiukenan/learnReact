@@ -1,8 +1,35 @@
-.show{
-    opacity 1
-    transition all 0.2s ease-in
-}
-.hidden{
+// .show{
+//     opacity 1
+//     transition all 0.2s ease-in
+// }
+// .hidden{
+//     opacity 0
+//     transition all 0.2s ease-in
+// }
+// button{
+//     font-size: 12px
+// }
+
+// 入场动画
+.boss-text-enter{
     opacity 0
-    transition all 0.2s ease-in
+}
+.boss-text-enter-active{
+    opacity 1
+    transition opacity 2000ms
+}
+.boss-text-enter-done{
+    opacity 1
+}
+
+.boss-text-exit{
+    opacity 1
+}
+.boss-text-exit-active{
+    opacity 0
+    transition opacity 2000ms
+}
+
+.boxx-text-exit-done{
+    opacity: 0
 }

@@ -1,5 +1,6 @@
 import React, { Component,Fragment } from 'react'
 import Xiaoitem from './Xiaoitem'
+import {CSSTransition,TransitionGroup} from 'react-transition-group'
 // import AddItem from './Additem'
 import './xiaojiejie.styl'
 import {_getList,_login} from './api/server'
@@ -66,13 +67,17 @@ class xiaojiejie extends Component {
                         增加
                     </button> 
                 <ul ref={ul=>this.ul=ul}>
-                  {
-                      this.state.list.map((item,index)=>{
-                          return(
-                              <Xiaoitem list={this.state.list} key={index+item} content={item} deleItem={this.deleItem.bind(this,index)} avaname={this.state.avaname}/>
-                          )
-                      })
-                  }
+                    <TransitionGroup>
+                        {
+                            this.state.list.map((item,index)=>{
+                                return(
+                                    <CSSTransition timeout={1000} classNames='boss-text' unmountOnExit key={index+item} appear={true}>
+                                        <Xiaoitem list={this.state.list} key={index+item} content={item} deleItem={this.deleItem.bind(this,index)} avaname={this.state.avaname}/>
+                                    </CSSTransition>
+                                )
+                            })
+                        }
+                    </TransitionGroup>
                     
                     
                 </ul>

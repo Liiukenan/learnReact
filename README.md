@@ -18,5 +18,11 @@ ps：render中不可添加注释，否则打包后会报错
 组件必须大写
 
 
+react-transition-group
 
+
+CSSTransition
+
+多dom动画
+TransitionGroup
 
