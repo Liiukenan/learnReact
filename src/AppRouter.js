@@ -16,7 +16,7 @@ function AppRouter(){
                 </li>
             </ul>
             <Route path="/" exact component={Index}></Route>
-            <Route path="/list/:id" component={List}></Route>
+            <Route path="/list/:id/:name" component={List}></Route>
         </Router>
     )
 }

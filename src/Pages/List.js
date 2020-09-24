@@ -5,19 +5,19 @@ class List extends Component {
        this.state = {}
     }
     render() {
+        
         return (
             <div>
-               这是详情页{this.state.id}
+               这是详情页
             </div>
         );
     }
     componentDidMount() {
-        console.log(this.props);
         let temId = this.props.match.params.id;
         this.setState({
             id:temId
         })
-        console.log(temId);
+        console.log(this.props);
     }
     
 }

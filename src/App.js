@@ -3,10 +3,7 @@ import React, { Component } from "react";
 // import Boss from './Boss'
 import AppRouter from "./AppRouter"
 class App extends Component {
-  
- 
   render() {
-
     return(
       <div>
         <AppRouter />
