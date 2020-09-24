@@ -10,13 +10,13 @@ function AppRouter(){
                     <Link to="/">
                         首页
                     </Link>
-                    <Link to="/list/">
+                    <Link to="/list/1234">
                         列表
                     </Link>
                 </li>
             </ul>
             <Route path="/" exact component={Index}></Route>
-            <Route path="/list/"  component={List}></Route>
+            <Route path="/list/:id" component={List}></Route>
         </Router>
     )
 }

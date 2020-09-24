@@ -30,3 +30,14 @@
     Route    线路
 
 ### 无状态组件(函数组件)
+
+### 精确匹配exact
+
+## router传递值步骤
+### 设置规则   传递值   接收值   显示内容
+
+
+
+## 打包路径修改
+### config/paths.js  module.exports{appPublic:}
+## 打包配置 package.json    homepage:"."
