@@ -5,7 +5,6 @@ class List extends Component {
        this.state = {}
     }
     render() {
-        
         return (
             <div>
                这是详情页
