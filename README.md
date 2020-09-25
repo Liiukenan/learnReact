@@ -45,3 +45,6 @@
 
 <!-- Hooks <react 新特性> -->
 
+### 多状态，不能在if中使用useState
+
+### useEffect  更新
