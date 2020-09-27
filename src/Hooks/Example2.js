@@ -4,7 +4,7 @@ import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
 function Index(){
     //解绑组件更新
     useEffect(()=>{
-        console.log('userEffect=>这是index');
+        console.log(1342432);
         return()=>{
             console.log('走了小可爱index');
         }
@@ -13,12 +13,12 @@ function Index(){
     return <h2>Index</h2>
 }
 function List(){
+    console.log(11);
     useEffect(()=>{
-        console.log('userEffect=>这是list');
          return()=>{
             console.log('走了小可爱list');
         }
-    })
+    },[])
     return <h2>list page</h2>
 }
 function Example2(){
@@ -28,7 +28,11 @@ function Example2(){
     useEffect(()=>{
         console.log(count);
         // 类似于生命周期函数里面的更新
-    })
+        return()=>{
+            console.log('=============');
+            // "更新count的时候会出现'========'"
+        }
+    },[count])
     return (
         <div>
             <p>
@@ -46,8 +50,8 @@ function Example2(){
                         <Link to="/list/">列表</Link>
                     </li>
                 </ul>
-                <Route path='/' exact component={Index}></Route>
-                <Route path='/list/'  component={List}></Route>
+                <Route path='/' exact component={Index} />
+                <Route path='/list/'  component={List} />
             </Router>
         </div>
     )
