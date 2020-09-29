@@ -3,6 +3,13 @@ function Example1(){
     const[count,setCount]=useState(0)
     const[age]=useState('kenan')
     const[sex,setSex]=useState('男')
+    const myCount=()=>{
+        setCount(count+1)
+
+    }
+    const mySex=()=>{
+        setSex('女')
+    }
     return (
         <div>
             <p>
@@ -11,8 +18,8 @@ function Example1(){
                 ked {count} times
                 
             </p>
-            <button onClick={()=>{setCount(count+1)}}>增加</button>
-            <button onClick={()=>{setSex('女')}}>change</button>
+            <button onClick={myCount}>增加</button>
+            <button onClick={mySex}>change</button>
         </div>
     )
 }
