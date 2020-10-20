@@ -15,7 +15,6 @@ function Example3(){
         <div>
             <p>
                 ked {count} times
-                
             </p>
             <button onClick={()=>{setCount(count+1)}}>增加</button>
             <CountContext.Provider value={count}>

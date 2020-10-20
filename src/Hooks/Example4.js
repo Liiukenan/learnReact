@@ -7,12 +7,18 @@ function ReducerDemo(){
             default: return state;
         }
     },0)
+    const add=()=>{
+        dispatch('add')
+    }
+    const sub=()=>{
+        dispatch('sub')
+    }
     // 0代表默认值
     return(
         <div>
             <h2>分数:{count}</h2>
-            <button onClick={()=>{dispatch('add')}}>加号</button>
-            <button onClick={()=>{dispatch('sub')}}>减号</button>
+            <button onClick={add}>加号</button>
+            <button onClick={sub}>减号</button>
         </div>
     )
 }
