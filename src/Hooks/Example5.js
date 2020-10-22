@@ -1,13 +1,9 @@
-import React,{useState ,createCon} from 'react'
+import React from 'react'
 function Example5(props) {
-     const [count,setCount]=useState(0)
-     const add=()=>{
-          setCount(count+1)
-     }
+     console.log(props);
      return (
           <div>
-               <div>{count}</div>
-               <button onClick={add}>click</button>
+              1234
           </div>
       );
 }

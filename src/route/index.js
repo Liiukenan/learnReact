@@ -6,8 +6,6 @@ function AppRouter(){
         <div>
            <Router>
                 <Route path="/"  component={Content}></Route>
-               
-               
             </Router> 
         </div>
         

@@ -4,7 +4,7 @@ import {Route,Link} from 'react-router-dom'
 import Content1 from './Content1'
 import Content2 from './Content2'
 import Article from './Article'
-function Home() {
+function Content() {
         return (
             <div className="home">
                 <div className="top">
@@ -20,4 +20,4 @@ function Home() {
             </div>
         );
     }
-export default Home;
+export default Content;

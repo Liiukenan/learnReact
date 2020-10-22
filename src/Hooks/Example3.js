@@ -1,16 +1,8 @@
-import React,{useState,createContext,useContext} from 'react'
-const CountContext=createContext()
-function Counter(){
-    let count=useContext(CountContext)
-    // 向子组件传递
-    
-    return (
-        <h3>{count}</h3>
-    )
-}
-function Example3(){
+import React,{useState} from 'react'
+import Counter from './Counter'
+import CountContext from './createContext'
+function Example3(props){
     const[count,setCount]=useState(0)
-
     return (
         <div>
             <p>
@@ -23,4 +15,5 @@ function Example3(){
         </div>
     )
 }
+
 export default Example3;
