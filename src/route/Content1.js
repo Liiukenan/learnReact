@@ -1,8 +1,15 @@
 import React from 'react'
-function Content1() {
+function Content1(props) {
+        const back=()=>{
+            // console.log(props);
+            props.history.goBack();
+        }
         return (
             <div>
-               这是12432314324
+               这是路由
+               <button onClick={back}>
+                    返回
+               </button>
             </div>
         );
     }

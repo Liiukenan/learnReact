@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Counter from './Counter'
 import CountContext from './createContext'
-import Test from './Test1'
+// import Test from './Test1'
 function Example3(props){
     const[count,setCount]=useState(0)
     return (
@@ -12,7 +12,7 @@ function Example3(props){
             <button onClick={()=>{setCount(count+1)}}>增加</button>
             <CountContext.Provider value={count}>
                 <Counter />
-                <Test />
+                {/* <Test /> */}
             </CountContext.Provider>
             {/* <CountContext.Provider value={count+2}>
                 <Test />

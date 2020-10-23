@@ -3,7 +3,6 @@ import ShowArea from './ShowArea'
 import Buttons from './Buttons'
 import {Color} from './Color'
 function Example5(props) {
-     console.log(props);
      return (
           <div>
             <Color>

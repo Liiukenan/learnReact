@@ -7,7 +7,7 @@ import Article from './Article'
 function Content() {
         return (
             <div className="home">
-                <div className="top">
+                <div className="top" style={{marginTop:'50px'}}>
                     <Link to="/content/content1">跳转到1</Link>
                     <Link to="/content/content2">跳转到2</Link>
                     <Link to="/article">跳转到3</Link>
