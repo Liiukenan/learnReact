@@ -10,6 +10,9 @@ function Content1(props) {
                <button onClick={back}>
                     返回
                </button>
+               <button>
+                   {props.children}
+               </button>
             </div>
         );
     }
