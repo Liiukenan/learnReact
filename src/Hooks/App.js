@@ -5,7 +5,9 @@ import React from 'react'
 // import Example4 from './Example4'
 // import Example5 from './Example5'
 // import Example8 from './Example8'
-import Example from './Example10'
+// import Example from './Example10'
+import Example from './Example11'
+
  
 
 function App(props) {

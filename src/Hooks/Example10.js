@@ -1,4 +1,5 @@
 import React ,{useState,useEffect,useCallback} from 'react'
+import './example10.styl'
 const useWinSize=()=>{
     const [size,setSize]=useState({
         width:document.documentElement.clientWidth,
